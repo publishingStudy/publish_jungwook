@@ -1,0 +1,127 @@
+h1{
+    text-align: center;
+    font-size: 90px;
+    margin-top: 230px;
+}
+h1 span:nth-child(1){
+    color:#4285f3;
+}
+h1 span:nth-child(2){
+    color:#ea4435;
+}
+h1 span:nth-child(3){
+    color:#fabd13;
+}
+h1 span:nth-child(4){
+    color:#4285f3;
+}
+h1 span:nth-child(5){
+    color:#33a852;
+}
+h1 span:nth-child(6){
+    color:#ea4435;
+}
+.search-bar{
+    position: relative;
+}
+.search-bar .s_icon{
+    position: absolute;
+    top:43px;
+    left:12px;
+    font-size: 13px;
+    color: #9ba0a5;
+}
+.search-bar .k_icon{
+    position: absolute;
+    top: 42px;
+    right: 50px;
+    color: #9ba0a5;
+}
+.search-bar .m_icon{
+    position: absolute;
+    top: 42px;
+    right: 20px;
+    color: #9ba0a5;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width : 500px;
+    margin-top: 30px;
+}
+.sub{
+    margin-top: 30px;
+    display: flex;
+
+}
+.subBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    color: #606367;
+    font-size: 14px;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.provide{
+    margin-top: 20px;
+    display: flex;
+    font-size: 12px;
+}
+.provide .en{
+    margin-left: 5px;
+    color: blue;
+}
+.footer {
+    position: relative;
+    bottom: -270px;
+    display: flex;
+    flex-direction: column;
+    color: #717171;
+    background: #f4f4f4;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+
+}
+.footer .sub{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #e4e4e4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .left-bar{
+    display: flex;
+    align-items: center;
+}
+.footer .right-bar{
+    display: flex;
+    align-items: center;
+}
+.footer .sub-txt{
+    margin-right: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+.navbar .mail{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.navbar .img{
+    margin-top: 10px;
+    margin-right: 10px;  
+}
