@@ -41,6 +41,9 @@ body{
     list-style: none;
 }
 .header .nav:hover .subMenu{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
     display: flex;
 }
 .header .nav .menu{
@@ -70,11 +73,14 @@ body{
     color: #009223;
 }
 .header .nav .subMenu{
+    visibility: hidden;
+    opacity: 0;
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     list-style: none;
+    transition: all .1s linear;
 }
 @media screen and ( max-width: 1135px ) {
     .header .top .rightBox{

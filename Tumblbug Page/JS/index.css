@@ -1,0 +1,157 @@
+
+body{
+    margin:0;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .menu{
+    margin: 10px;
+    cursor: pointer;
+}
+.navbar .info{
+    display: flex;
+    align-items: center;
+}
+.navbar .search{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar .user {
+    width: 28px;
+    height: 28px;
+    margin: 7px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+/* imgSlider */
+.imgSlider{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    position:relative;
+}
+.imgSlider .img{
+    height: 350px;
+}
+.imgSlider .sideWrap{
+    background-color:rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ .textBox{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 40px;
+
+}
+ .mainText{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+ .mainText div{
+    margin-bottom:10px;
+
+}
+ .subText{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* button & page */
+.bAndP{
+    display: flex;
+    align-items: center;
+}
+/* buttonBox */
+.bAndP .buttonBox{
+    display : flex;
+    color: white;
+    margin-top:10px;
+    margin-left: 40px;
+}
+.bAndP .buttonBox .left{
+    border: white solid 1px;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.bAndP .buttonBox .right{
+    border: white solid 1px;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+/* page */
+.bAndP .page{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-size: 7px;
+    margin-top:16px;
+    margin-left: 10px;
+    border: 1px;
+    border-radius: 40%;
+    padding: 5px 8px;
+}
+@media screen and (max-width: 960px){
+    .imgSlider{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgSlider .img{
+        width: 100%;
+    }
+    .sideWrap{
+        border-top: solid 1px black;
+        width: auto;
+    }
+    .textBox{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 0 20px;
+    }
+     .mainText{
+         margin-top: 20px;
+        font-size: 20px;
+    }
+     .mainText div{
+        margin-bottom:10px;
+    }
+     .subText{
+        margin-top: 20px;
+        font-size: 11px;
+    }
+    .bAndP .buttonBox .left{
+        position: absolute;
+        left:10px;
+        bottom: 320px;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: none;
+    }
+    .bAndP .buttonBox .right{
+        position: absolute;
+        right:10px;
+        bottom: 320px;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: none;
+    }
+    .bAndP .page{
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+    }
+}
