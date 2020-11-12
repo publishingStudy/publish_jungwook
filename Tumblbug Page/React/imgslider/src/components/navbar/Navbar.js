@@ -5,7 +5,7 @@ const NavBarTamplate = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1084px;
+    width: 1035px;
 `;
 const NavBarLeft = styled.div`
     display: flex;

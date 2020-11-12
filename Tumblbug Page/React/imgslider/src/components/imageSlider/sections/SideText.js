@@ -8,13 +8,15 @@ const SideWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
+    transition-property: background-color;
+    transition-duration: 0.8s;
     ${props =>
         css`
-            transform: translate(-${(props.chIdx)*1070}px,0px);
+            transform: translate(-${(props.chIdx)*100}%,0px);
         `
     }
     ${props =>
-            props.chIdx == 1? css`background-color: #378eb5;`
+            props.chIdx == 1? css`background-color: #378eb5;` 
             :
                 (props.chIdx == 2? css`background-color: #d77847;`
                 :
@@ -29,6 +31,7 @@ const TextBox = styled.div`
     flex-direction: column;
     color: white;
     margin: 0 40px;
+    margin-right: 20px;
     width:260px;
 `;
 const MainText = styled.div`
@@ -44,15 +47,6 @@ const MainTxt2 = styled.div`
 const SubText = styled.div`
     margin-top: 20px;
     font-size: 13px;
-`;
-const Img = styled.img`
-    width:730px;
-    ${props =>
-        css`
-            transform: translate(-${(props.chIdx)*1070}px,0px);
-            transition: 0.5s;
-        `
-    }
 `;
 const ButtonAndPage = styled.div`
     display: flex;
@@ -71,6 +65,11 @@ const ButtonLeft = styled.div`
     margin-right: 10px;
     padding: 10px;
     cursor: pointer;
+    width:13px;
+    height:13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 const ButtonRight = styled.div`
     border: white solid 1px;
@@ -78,6 +77,11 @@ const ButtonRight = styled.div`
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
+    width:13px;
+    height:13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 const PageCnt = styled.div`
     color: white;
@@ -89,10 +93,10 @@ const PageCnt = styled.div`
     border-radius: 40%;
     padding: 5px 8px;
 `;
-function Image({obj, chIdx, onClickLeftButton, onClickRightButton}) {
-        return (
-            <>
-                <Img chIdx={chIdx} src={obj.img}></Img>
+
+function SideText({chIdx, obj, onClickLeftButton, onClickRightButton}) {
+    return (
+        <>
                 <SideWrap chIdx={chIdx}>
                     <TextBox>
                         <MainText>
@@ -114,9 +118,9 @@ function Image({obj, chIdx, onClickLeftButton, onClickRightButton}) {
                     </ButtonBox>
                     <PageCnt>{obj.idx+1}&nbsp;/&nbsp;5</PageCnt>
                 </ButtonAndPage>
-                </SideWrap>
-            </>
-        );
+            </SideWrap>
+        </>
+    )
 }
 
-export default Image
+export default SideText
