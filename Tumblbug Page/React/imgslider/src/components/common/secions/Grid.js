@@ -11,7 +11,8 @@ const GridTemplate = styled.div`
     overflow: hidden;
     border-radius: 6px;
     @media only screen and (max-width: 996px){
-        flex:1;
+        width:100%;
+        height:auto;
     }
 `;
 const Like = styled.div`
@@ -41,9 +42,10 @@ const Img = styled.img`
     transition: 0.3s;
     &:hover {
         transform:scale(1.05);
-        ${Like} {
-            transform:scale(1.2);
-        }
+    }
+    @media only screen and (max-width: 996px){
+        width:100%;
+        height:auto;
     }
 `;
 const TextBox = styled.div`

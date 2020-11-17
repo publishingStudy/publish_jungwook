@@ -7,6 +7,12 @@ const SliderTemplate = styled.div`
     display: flex;
     justify-content: flex-start;
     position: relative;
+    @media screen and (max-width: 960px){
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+    }
 `;
 const ImageTemplate = styled.div`
     display: flex;
@@ -15,17 +21,22 @@ const ImageTemplate = styled.div`
     height: 383px;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 960px){
+        width:100%;
+        height:auto;
+    }
 `;
 const SideTextTemplate = styled.div`
     display: flex;
     justify-content: flex-start;
     width: 320px;
     position: relative;
-    overflow: hidden;
+    @media screen and (max-width: 960px){
+        width:100%;
+        height:auto;
+    }
 `;
-const Button = styled.button`
 
-`;
 function Slider({object}) {
 
     const [chIdx,setChIdx] = useState(0);
@@ -89,7 +100,6 @@ function Slider({object}) {
                         onClickLeftButton={onClickLeftButton}
                         onClickRightButton={onClickRightButton}
                         >
-
                         </SideText>
                     ))
                 }

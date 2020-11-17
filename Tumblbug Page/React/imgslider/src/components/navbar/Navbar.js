@@ -6,6 +6,7 @@ const NavBarTamplate = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 1035px;
+    margin-top: 10px;
 `;
 const NavBarLeft = styled.div`
     display: flex;
